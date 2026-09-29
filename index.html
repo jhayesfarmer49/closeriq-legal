@@ -141,8 +141,9 @@
         <li>Profile information you provide during onboarding (your name, industry, role, experience level, and earnings range)</li>
         <li>Your responses to onboarding questions about your sales challenges and goals</li>
         <li>Microphone audio during AI voice practice sessions, which is processed in real time by our voice AI provider (Vapi) and is not stored by us</li>
+        <li>Text transcripts of your practice calls, and the AI-generated scores, grades, and coaching feedback produced from them</li>
         <li>Subscription and payment information, processed by Apple and not stored by us</li>
-        <li>Basic app usage data (sessions completed, features used) stored locally on your device</li>
+        <li>App usage data (sessions completed, streaks, personal bests, monthly usage)</li>
       </ul>
 
       <h2>3. How We Use Your Information</h2>
@@ -155,12 +156,15 @@
       </ul>
 
       <h2>4. Data Storage</h2>
-      <p>Your onboarding answers and progress data are stored locally on your device. We do not operate a user account database. Deleting the app removes all locally stored data. Voice call audio is streamed directly to Vapi for real-time processing and is not recorded or retained by CloserIQ.</p>
+      <p>CloserIQ creates an anonymous account for your device when you first use the app — no email or password is required, and we do not know your real-world identity. Your onboarding answers, call transcripts, scores, coaching feedback, streaks, and usage history are stored against this anonymous account in our database (hosted by Supabase), so your progress carries across sessions on the same device. Voice call audio itself is streamed directly to Vapi for real-time processing and is not recorded or retained by CloserIQ. You can permanently delete your account and all associated data at any time using "Delete My Data" in the app's Profile screen — see Section 9.</p>
 
       <h2>5. Third-Party Services</h2>
       <p>We use the following third-party services:</p>
       <ul>
         <li>Vapi AI — real-time voice AI for practice calls. Audio is processed under Vapi's privacy policy.</li>
+        <li>Anthropic (Claude) — call transcripts are sent to Anthropic's Claude API to generate your post-call scores and coaching feedback. Processed under Anthropic's privacy policy.</li>
+        <li>Supabase — stores your anonymous account, transcripts, scores, and usage history.</li>
+        <li>RevenueCat — manages and validates your subscription; payment details themselves are handled by Apple.</li>
         <li>Apple In-App Purchase — subscription billing. Payment data is handled by Apple.</li>
         <li>Expo / EAS — app delivery infrastructure. No personal data is shared.</li>
       </ul>
@@ -175,7 +179,7 @@
       <p>CloserIQ is intended for users aged 17 and over. We do not knowingly collect data from children under 13. If you believe a child has provided us data, contact us at <a href="mailto:founder@closeriq.online">founder@closeriq.online</a>.</p>
 
       <h2>9. Your Rights</h2>
-      <p>You may request deletion of any data associated with your use of the app by contacting <a href="mailto:founder@closeriq.online">founder@closeriq.online</a>. Since data is stored locally on your device, deleting the app removes all app data immediately.</p>
+      <p>You can permanently delete your account and all associated data — transcripts, scores, streaks, and usage history — at any time by tapping "Delete My Data" in the app's Profile screen. This cannot be undone. You can also request deletion by contacting <a href="mailto:founder@closeriq.online">founder@closeriq.online</a>.</p>
 
       <h2>10. Changes to This Policy</h2>
       <p>We may update this Privacy Policy from time to time. Changes will be posted within the app. Continued use after an update constitutes acceptance of the revised policy.</p>
